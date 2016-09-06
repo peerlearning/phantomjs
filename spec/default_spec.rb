@@ -51,7 +51,7 @@ describe 'phantomjs::default' do
 
   it 'creates the symlink' do
     link = runner.link('phantomjs-link')
-    expect(link.target_file).to eq('/usr/local/bin/phantomjs')
+    expect(link.target_file).to eq('/usr/bin/phantomjs')
     expect(link.to).to eq("/usr/local/#{basename}/bin/phantomjs")
   end
 end
